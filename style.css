@@ -1,0 +1,90 @@
+/* Header styles */
+ header
+{
+position: fixed; 
+top: 0;
+width: 100%;
+background-color: lab(52.14% -1.68 -32.69);
+color: rgb(234, 234, 234); padding: 10px 30px; /* smaller padding */
+box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+z-index: 1000;
+} 
+/* Navbar container */
+ .navbar 
+ { 
+display: flex; /* horizontal layout */
+align-items: center; /* vertically center items */
+justify-content:right; /* logo left, buttons right */
+padding: 10px 30px; /* optional padding */ } 
+/* Logo on left */ 
+ .logo 
+ {
+    font-size: 20px; /* smaller font */
+    font-weight: bold; 
+ }
+/* Right-side buttons container */ 
+.nav-buttons button 
+{
+background-color: white; 
+color: lab(52.14% -1.68 -32.69);
+border: none;
+padding: 8px 15px; /* smaller padding */
+margin-left: 8px; /* smaller space between buttons */
+border-radius: 20px; /* slightly smaller rounded corners */ 
+font-weight: bold;
+font-size: 10px; /* smaller text */ 
+cursor: pointer; transition: all 0.3s ease;
+ } /* Hover effect */ 
+.nav-buttons button:hover 
+{
+background-color: lab(62.14% -1.68 -32.69); 
+color: white;
+transform: scale(1.05); 
+} 
+.home-buttons button
+{ 
+background-color: lab(76.07% -3.42 -18.91); 
+/* your main theme color */ 
+color: white;
+border: none;
+padding: 8px 15px; 
+margin: 10px;
+border-radius: 25px; /* rounded edges */
+font-size: 10px;
+font-weight: bold;
+cursor: pointer; 
+transition: all 0.3s ease;
+width: 100px; height:auto; 
+text-align: center;
+}
+/* Hover effect */
+.home-buttons button:hover 
+{
+background-color: lab(89.84% -1.11 -5.91); /* slightly lighter on hover */ 
+transform: scale(1.05); /* grows a little */
+color:rgb(215, 216, 174); } 
+.home-buttoms
+{
+ margin-top: 150px; /* space below header */
+ }
+ nav button
+{
+align-items: right; 
+}
+body {
+  background: linear-gradient(180deg, #e4e8ef, #cfdef3);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 80px; /* 👈 creates space below fixed header */
+}
+/* index */
+.butn1 {
+  background-color: lightblue;
+  transform: scale(1);
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.butn1:hover {
+  background-color: skyblue;
+  transform: scale(1.1); /* enlarges smoothly */
+}
